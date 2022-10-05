@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.Android;
 
 public class Player : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class Player : MonoBehaviour
 
     [System.NonSerialized]
     public float yVelocity;
+    [System.NonSerialized]
+    public static bool isPaused;
 
     // Start is called before the first frame update
     void Start()
@@ -100,13 +103,26 @@ public class Player : MonoBehaviour
 
     private void Shift()
     {
-        if (controller.isGrounded == true)
+        bool canShift;
+        canShift = isPaused == true ? true : controller.isGrounded; // controller.isGrounded is frame dependent
+
+        // Enter mode to shift dimensions by pressing either Shift keys
+        if (canShift && (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)))
         {
-            // Enter mode to shift dimensions by pressing either Shift keys
-            if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
-            {
-                // TODO implement shifting behavior
-            }
+            // Pause the game and present options
+            isPaused = !isPaused;
+            PauseGame();
+        }
+    }
+    void PauseGame()
+    {
+        if (isPaused)
+        {
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
         }
     }
 }

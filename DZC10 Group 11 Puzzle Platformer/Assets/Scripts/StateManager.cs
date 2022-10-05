@@ -6,6 +6,7 @@ public class StateManager : MonoBehaviour
 {
     // Possible player states
     public GameObject Player;
+    public GameObject PlayerShift;
     public GameObject PlayerLowGravity;
 
     public GameObject CurrentPlayer;
@@ -28,6 +29,10 @@ public class StateManager : MonoBehaviour
 
         switch (dimensionID)
         {
+            case -1: // Player is in shifting state
+
+                break;
+
             case 0: // Default dimension
                 Destroy(CurrentPlayer);
                 Instantiate(Player, CurrentPlayer.transform.position, Quaternion.identity);
@@ -50,6 +55,10 @@ public class StateManager : MonoBehaviour
         if (layer > 0)
         {
             return (int)(layer / 10);
+        }
+        else if (CurrentPlayer.name == "PlayerShift")
+        {
+            return -1;
         }
         else
         {
