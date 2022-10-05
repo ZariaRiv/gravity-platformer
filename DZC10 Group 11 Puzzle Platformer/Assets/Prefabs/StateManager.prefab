@@ -45,5 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 6398017851774441909, guid: 369faa21c73931e4d8b09bc3d5c202c2, type: 3}
+  PlayerSwitchState: {fileID: 3963744527378637216, guid: b66d8d11ebd66aa4aa143a4d4a922864, type: 3}
   PlayerLowGravity: {fileID: 4867588810334491047, guid: 9c33ea2bea3cae440a357ec55d2d111c, type: 3}
   CurrentPlayer: {fileID: 0}

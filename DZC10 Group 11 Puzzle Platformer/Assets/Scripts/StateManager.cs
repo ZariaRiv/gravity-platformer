@@ -6,7 +6,7 @@ public class StateManager : MonoBehaviour
 {
     // Possible player states
     public GameObject Player;
-    public GameObject PlayerShift;
+    public GameObject PlayerSwitchState;
     public GameObject PlayerLowGravity;
 
     public GameObject CurrentPlayer;
@@ -22,6 +22,13 @@ public class StateManager : MonoBehaviour
         }
     }
 
+    // Places players in the state where they may switch dimensions
+    public void EnterSwitchState()
+    {
+        Destroy(CurrentPlayer);
+        Instantiate(PlayerSwitchState, CurrentPlayer.transform.position, Quaternion.identity);
+    }
+
     // Handles the switch to a new player object
     public void UpdatePlayer()
     {
@@ -29,10 +36,6 @@ public class StateManager : MonoBehaviour
 
         switch (dimensionID)
         {
-            case -1: // Player is in shifting state
-
-                break;
-
             case 0: // Default dimension
                 Destroy(CurrentPlayer);
                 Instantiate(Player, CurrentPlayer.transform.position, Quaternion.identity);

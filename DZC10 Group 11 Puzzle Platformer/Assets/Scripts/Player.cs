@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
-using UnityEngine.Android;
 
 public class Player : MonoBehaviour
 {
@@ -18,11 +17,9 @@ public class Player : MonoBehaviour
 
     [System.NonSerialized]
     public float yVelocity;
-    [System.NonSerialized]
-    public static bool isPaused;
 
     // Start is called before the first frame update
-    void Start()
+    public virtual void Start()
     {
         controller = GetComponent<CharacterController>();
 
@@ -33,11 +30,10 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
         Move();
-        SwitchLayer();
-        Shift();
+        SwitchDimensions();
     }
 
     public virtual void Move()
@@ -82,47 +78,13 @@ public class Player : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
     }
     
-    private void SwitchLayer() // Placeholder for testing purposes, needs a rework
+    private void SwitchDimensions()
     {
-        // Jump to the background
-        if (Input.GetKeyDown(KeyCode.E))
+        // Enter mode to switch dimensions by pressing either Shift keys while grounded
+        if (controller.isGrounded && (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)))
         {
-            controller.transform.Translate(0, 0, 10);
             stateManager.Identify(this.gameObject); // Lets the StateManager know they are the current player
-            stateManager.UpdatePlayer();            // Prompts the StateManager to handle the player switch
-        }
-
-        // Jump to the foreground
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            controller.transform.Translate(0, 0, -10);
-            stateManager.Identify(this.gameObject);
-            stateManager.UpdatePlayer();
-        }  
-    }
-
-    private void Shift()
-    {
-        bool canShift;
-        canShift = isPaused == true ? true : controller.isGrounded; // controller.isGrounded is frame dependent
-
-        // Enter mode to shift dimensions by pressing either Shift keys
-        if (canShift && (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)))
-        {
-            // Pause the game and present options
-            isPaused = !isPaused;
-            PauseGame();
-        }
-    }
-    void PauseGame()
-    {
-        if (isPaused)
-        {
-            Time.timeScale = 0f;
-        }
-        else
-        {
-            Time.timeScale = 1f;
+            stateManager.EnterSwitchState();        // Prompts the StateManager to expect a dimension switch
         }
     }
 }
