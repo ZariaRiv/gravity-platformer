@@ -34,6 +34,7 @@ public class Player : MonoBehaviour
     {
         Move();
         SwitchLayer();
+        Shift();
     }
 
     public virtual void Move()
@@ -95,5 +96,17 @@ public class Player : MonoBehaviour
             stateManager.Identify(this.gameObject);
             stateManager.UpdatePlayer();
         }  
+    }
+
+    private void Shift()
+    {
+        if (controller.isGrounded == true)
+        {
+            // Enter mode to shift dimensions by pressing either Shift keys
+            if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+            {
+                // TODO implement shifting behavior
+            }
+        }
     }
 }
