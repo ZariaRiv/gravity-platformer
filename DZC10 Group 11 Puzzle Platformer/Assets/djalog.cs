@@ -1,3 +1,5 @@
+// Commented this out because of the errors
+/*
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -52,3 +54,4 @@ public class Dialog{
 
    }
 }
+*/

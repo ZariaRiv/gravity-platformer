@@ -23,9 +23,11 @@ public class Dialog{
             Instance = this;
 
             // Add close event lisener
+            
+            /* Commented because of the errors
             closeUIButton.onClick.RemoveAllListeners();
             closeUIButton.onClick.AddListener( Hide);
-
+            */
 
         }
         // set dialog message
