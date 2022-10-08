@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class PlayerSwitchState : Player
 {
+    [HideInInspector]
+    public int currentDimension, numberOfDimensions;
+
     // Override Start() to pause the time upon creation
     new public void Start()
     {
@@ -20,6 +23,9 @@ public class PlayerSwitchState : Player
             Debug.Log("LevelManager not found!");
         }
 
+        currentDimension = getCurrentDimension();
+        numberOfDimensions = levelManager.getSceneDimensions();
+
         controller.transform.Translate(0, 1, -1);   // To increase focus
         // TODO: Add tooltips for player actions in this state (up/down to switch, shift to accept)
 
@@ -32,13 +38,21 @@ public class PlayerSwitchState : Player
         // Jump to the next dimension
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
-            controller.transform.Translate(0, 40, 0);
+            if (currentDimension < numberOfDimensions - 1)
+            {
+                controller.transform.Translate(0, 40, 0);
+                currentDimension++;
+            }
         }
 
         // Jump to the previous dimension
         if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
-            controller.transform.Translate(0, -40, 0);
+            if (currentDimension > 0)
+            {
+                controller.transform.Translate(0, -40, 0);
+                currentDimension--;
+            }
         }
 
         // Accept current dimension
@@ -49,5 +63,19 @@ public class PlayerSwitchState : Player
             stateManager.Identify(this.gameObject);     // Lets the StateManager know they are the current player
             stateManager.UpdatePlayer();                // Prompts the StateManager to handle the dimension switch
         }
+    }
+
+    int getCurrentDimension()
+    {
+        float position = transform.position.y;
+        int dimensionIndex = 0;
+
+        while ((position - 40) > 0)
+        {
+            dimensionIndex++;
+            position -= 40;
+        }
+
+        return dimensionIndex;
     }
 }

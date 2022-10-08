@@ -5,16 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    int levelDimensions = 0;
-
-    void Awake()
+    Dictionary<int, int> sceneDimensions = new Dictionary<int, int>() // <buildIndex, dimensions>
     {
-        countDimensions();
-    }
+        {0, 1}, // Menu/intro scene with 1 dimension
+        {1, 2}, // lowGravity1 with 2 dimensions
+        {2, 2}, // lowGravity2 with 2 dimensions
+    }; 
 
-    public void countDimensions()
+    public int getSceneDimensions()
     {
-        // Should inform the PlayerSwitchState how many dimensions this level has
+        return sceneDimensions[SceneManager.GetActiveScene().buildIndex];
     }
 
     public void reloadLevel()
