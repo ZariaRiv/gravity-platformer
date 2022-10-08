@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     [HideInInspector]
     public CharacterController controller;
     public StateManager stateManager;
+    public LevelManager levelManager;
 
     // Movement variables
     public float moveSpeed = 5.0f;
@@ -23,9 +24,16 @@ public class Player : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
 
+        // Checks if the current scene contains a StateManager 
         if (stateManager == null)
         {
             Debug.Log("StateManager not found!");
+        }
+
+        // Checks if the current scene contains a LevelManager
+        if (levelManager == null)
+        {
+            Debug.Log("LevelManager not found!");
         }
     }
 
@@ -34,6 +42,7 @@ public class Player : MonoBehaviour
     {
         Move();
         SwitchDimensions();
+        MenuInputs();
     }
 
     public virtual void Move()
@@ -85,6 +94,15 @@ public class Player : MonoBehaviour
         {
             stateManager.Identify(this.gameObject); // Lets the StateManager know they are the current player
             stateManager.EnterSwitchState();        // Prompts the StateManager to expect a dimension switch
+        }
+    }
+
+    // Handles inputs such as reloading the level or exiting the game maybe?
+    private void MenuInputs()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            levelManager.reloadLevel();
         }
     }
 }

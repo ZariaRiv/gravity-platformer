@@ -134,6 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   stateManager: {fileID: 1116478257939933078, guid: 6290f6678a3f3634e92a664244b3ece7, type: 3}
+  levelManager: {fileID: -3330119966360964020, guid: 3696c5379856e5843ad5fd70e8426bc8, type: 3}
   moveSpeed: 5
   jumpSpeed: 10
   gravity: 25

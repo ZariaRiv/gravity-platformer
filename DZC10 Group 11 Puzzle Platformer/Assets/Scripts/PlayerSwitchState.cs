@@ -15,6 +15,11 @@ public class PlayerSwitchState : Player
             Debug.Log("StateManager not found!");
         }
 
+        if (levelManager == null)
+        {
+            Debug.Log("LevelManager not found!");
+        }
+
         controller.transform.Translate(0, 1, -1);   // To increase focus
         // TODO: Add tooltips for player actions in this state (up/down to switch, shift to accept)
 
