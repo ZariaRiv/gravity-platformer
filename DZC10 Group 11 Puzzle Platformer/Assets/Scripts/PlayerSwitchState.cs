@@ -24,16 +24,16 @@ public class PlayerSwitchState : Player
     // Override Update() to now only support switching dimensions
     new public void Update()
     {
-        // Jump to the background
+        // Jump to the next dimension
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
-            controller.transform.Translate(0, 0, 10);
+            controller.transform.Translate(0, 40, 0);
         }
 
-        // Jump to the foreground
+        // Jump to the previous dimension
         if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
-            controller.transform.Translate(0, 0, -10);
+            controller.transform.Translate(0, -40, 0);
         }
 
         // Accept current dimension
