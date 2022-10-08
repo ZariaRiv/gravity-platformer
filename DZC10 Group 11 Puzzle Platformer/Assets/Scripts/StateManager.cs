@@ -87,42 +87,4 @@ public class StateManager : MonoBehaviour
 
         return dimensions[dimensionIndex];
     }
-
-    public void OldUpdatePlayer()
-    {
-        int dimensionID = this.oldGetDimensionID();
-
-        switch (dimensionID)
-        {
-            case 0: // Default dimension
-                Destroy(CurrentPlayer);
-                Instantiate(Player, CurrentPlayer.transform.position, Quaternion.identity);
-                break;
-
-            case 1: // Low gravity dimension
-                Destroy(CurrentPlayer);
-                Instantiate(PlayerLowGravity, CurrentPlayer.transform.position, Quaternion.identity);
-                break;
-
-            default:
-                break;
-        }
-    }
-
-    public int oldGetDimensionID()
-    {
-        float layer = CurrentPlayer.transform.position.z;
-        if (layer > 0)
-        {
-            return (int)(layer / 10);
-        }
-        else if (CurrentPlayer.name == "PlayerShift")
-        {
-            return -1;
-        }
-        else
-        {
-            return 0;
-        }
-    }
 }
