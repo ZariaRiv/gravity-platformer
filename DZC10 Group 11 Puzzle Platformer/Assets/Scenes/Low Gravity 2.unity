@@ -1126,7 +1126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 935975252}
   m_Layer: 0
-  m_Name: Main Layer
+  m_Name: Default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1708,7 +1708,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1610261201}
   m_Layer: 0
-  m_Name: Layer 1
+  m_Name: Low Gravity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
