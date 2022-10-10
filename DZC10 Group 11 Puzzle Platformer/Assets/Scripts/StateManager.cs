@@ -10,6 +10,7 @@ public class StateManager : MonoBehaviour
     public GameObject PlayerSwitchState;
     public GameObject PlayerLowGravity;
     public GameObject PlayerSmall;
+    public GameObject PlayerInverseGravity;
 
     public GameObject CurrentPlayer;
 
@@ -57,9 +58,8 @@ public class StateManager : MonoBehaviour
                 break;
 
             case "inverseGravity":
-                Debug.Log("inverseGravity dimension not implemented yet!");
-                //Destroy(CurrentPlayer);
-                //Instantiate(PlayerInverseGravity, CurrentPlayer.transform.position, Quaternion.identity);
+                Destroy(CurrentPlayer);
+                Instantiate(PlayerInverseGravity, CurrentPlayer.transform.position, Quaternion.identity);
                 break;
 
             case "slowMotion":

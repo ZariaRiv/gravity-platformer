@@ -48,6 +48,7 @@ MonoBehaviour:
   PlayerSwitchState: {fileID: 3963744527378637216, guid: b66d8d11ebd66aa4aa143a4d4a922864, type: 3}
   PlayerLowGravity: {fileID: 4867588810334491047, guid: 9c33ea2bea3cae440a357ec55d2d111c, type: 3}
   PlayerSmall: {fileID: 6398017851774441909, guid: b0c68318622df9042a36b0448d74cd6f, type: 3}
+  PlayerInverseGravity: {fileID: 6398017851774441909, guid: 31741d165706c03478031df40907501f, type: 3}
   CurrentPlayer: {fileID: 0}
   dimensions:
   - default
