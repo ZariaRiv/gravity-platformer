@@ -26,6 +26,6 @@ public class PlayerSmall : Player
         transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
 
         // Make jumps lower
-        jumpSpeed = 5f;
+        jumpSpeed = 7f;
     }
 }

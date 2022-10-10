@@ -24,11 +24,7 @@ public class PlayerInverseGravity : Player
         // Inverts the gravity and jumps
         gravity = -gravity;
         jumpSpeed = -jumpSpeed;
-        playerIsGrounded = false;
     }
 
-    new public void checkIfGrounded()
-    {
-        // Should now be true when touching the ceiling, can't get it to work
-    }
+    // TODOa: override Player.Move() to allow for a different jump check
 }
