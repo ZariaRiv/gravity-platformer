@@ -9,11 +9,12 @@ public class StateManager : MonoBehaviour
     public GameObject Player;
     public GameObject PlayerSwitchState;
     public GameObject PlayerLowGravity;
+    public GameObject PlayerSmall;
 
     public GameObject CurrentPlayer;
 
     [HideInInspector]
-    public string[] dimensions = {"default", "lowGravity", "small", "inverseGravity", "slowMotion?"};
+    public string[] dimensions = {"default", "lowGravity", "small", "inverseGravity", "slowMotion"};
 
     // Allows the current version of the player to identify themself to the StateManager
     public void Identify(GameObject currentState)
@@ -51,9 +52,8 @@ public class StateManager : MonoBehaviour
                 break;
 
             case "small":
-                Debug.Log("Small dimension not implemented yet!");
-                //Destroy(CurrentPlayer);
-                //Instantiate(PlayerSmall, CurrentPlayer.transform.position, Quaternion.identity);
+                Destroy(CurrentPlayer);
+                Instantiate(PlayerSmall, CurrentPlayer.transform.position, Quaternion.identity);
                 break;
 
             case "inverseGravity":

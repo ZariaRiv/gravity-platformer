@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerLowGravity : Player
+public class PlayerSmall : Player
 {
-    // Override of Player.Start() to incorporate the lower gravity
+    // Override of Player.Start() to shrink and reduce jump height
     new public void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -22,7 +22,10 @@ public class PlayerLowGravity : Player
             Debug.Log("LevelManager not found!");
         }
 
-        // Lowers the gravity for this object
-        gravity = 10f;
+        // Shrink to a smaller size
+        transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+
+        // Make jumps lower
+        jumpSpeed = 5f;
     }
 }

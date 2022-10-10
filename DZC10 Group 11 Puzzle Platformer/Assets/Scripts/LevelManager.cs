@@ -8,8 +8,12 @@ public class LevelManager : MonoBehaviour
     Dictionary<int, int> sceneDimensions = new Dictionary<int, int>() // <buildIndex, dimensions>
     {
         {0, 1}, // Menu/intro scene with 1 dimension
-        {1, 2}, // lowGravity1 with 2 dimensions
-        {2, 2}, // lowGravity2 with 2 dimensions
+        {1, 2}, // Low Gravity 1 with 2 dimensions
+        {2, 2}, // Low Gravity 2 with 2 dimensions
+        {3, 3}, // Small 1 with 3 dimensions
+        {4, 3}, // Small 2 with 3 dimensions
+        {5, 4}, // Inverse Gravity 1 with 4 dimensions
+        {6, 4}, // Inverse Gravity 2 with 4 dimensions
     }; 
 
     public int getSceneDimensions()
