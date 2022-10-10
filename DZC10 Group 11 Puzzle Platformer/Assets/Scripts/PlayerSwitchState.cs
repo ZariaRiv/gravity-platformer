@@ -26,7 +26,7 @@ public class PlayerSwitchState : Player
         currentDimension = getCurrentDimension();
         numberOfDimensions = levelManager.getSceneDimensions();
 
-        controller.transform.Translate(0, 1, -1);   // To increase focus
+        controller.transform.Translate(0, 1, 0);   // To increase focus
         // TODO: Add tooltips for player actions in this state (up/down to switch, shift to accept)
 
         Time.timeScale = 0f; // Effectively pauses the game
@@ -58,7 +58,7 @@ public class PlayerSwitchState : Player
         // Accept current dimension
         if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
         {
-            controller.transform.Translate(0, -1, 1);
+            controller.transform.Translate(0, -1, 0);
             Time.timeScale = 1f;                        // Unpause the game
             stateManager.Identify(this.gameObject);     // Lets the StateManager know they are the current player
             stateManager.UpdatePlayer();                // Prompts the StateManager to handle the dimension switch

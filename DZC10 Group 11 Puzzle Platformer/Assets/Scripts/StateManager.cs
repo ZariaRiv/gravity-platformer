@@ -87,4 +87,10 @@ public class StateManager : MonoBehaviour
 
         return dimensions[dimensionIndex];
     }
+
+    public bool canSwitch()
+    {
+        // Should return true when the player would fit in the current dimension
+        return false;
+    }
 }
