@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
 
     [System.NonSerialized]
     public float yVelocity;
+    [System.NonSerialized]
+    public bool playerIsGrounded;
 
     // Start is called before the first frame update
     public virtual void Start()
@@ -40,9 +42,15 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     public virtual void Update()
     {
+        checkIfGrounded();
         Move();
         SwitchDimensions();
         MenuInputs();
+    }
+
+    public virtual void checkIfGrounded()
+    {
+        playerIsGrounded = controller.isGrounded;
     }
 
     public virtual void Move()
@@ -53,7 +61,7 @@ public class Player : MonoBehaviour
         Vector3 velocity = direction * moveSpeed;
 
         // Jumping and falling
-        if (controller.isGrounded == true)
+        if (playerIsGrounded == true)
         {
             // Jump when pressing space/w/arrow up by setting vetical speed
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
@@ -71,7 +79,7 @@ public class Player : MonoBehaviour
             }
 
             // Applying gravity
-            yVelocity -= this.gravity * Time.deltaTime;
+            yVelocity -= gravity * Time.deltaTime;
         }
 
         // Sets a maximal falling speed
@@ -90,7 +98,7 @@ public class Player : MonoBehaviour
     private void SwitchDimensions()
     {
         // Enter mode to switch dimensions by pressing either Shift keys while grounded
-        if (controller.isGrounded && (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)))
+        if (playerIsGrounded && (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)))
         {
             stateManager.Identify(this.gameObject); // Lets the StateManager know they are the current player
             stateManager.EnterSwitchState();        // Prompts the StateManager to expect a dimension switch
