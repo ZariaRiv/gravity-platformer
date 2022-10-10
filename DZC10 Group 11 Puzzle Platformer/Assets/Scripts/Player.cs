@@ -105,4 +105,17 @@ public class Player : MonoBehaviour
             levelManager.reloadLevel();
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Damaging") // Player collided with something dangerous, like enemies or spikes
+        {
+            levelManager.reloadLevel();
+        }
+
+        if (other.tag == "Portal") // Player has reached the end of the level
+        {
+            levelManager.nextLevel();
+        }
+    }
 }
