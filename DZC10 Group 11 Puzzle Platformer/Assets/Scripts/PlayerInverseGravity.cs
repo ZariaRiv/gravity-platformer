@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInverseGravity : Player
 {
-    // Override of Player.Start() to invert gravity
+    // Adds inverted gravity to Player.Start()
     new public void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -28,32 +28,21 @@ public class PlayerInverseGravity : Player
     }
 
     // TODO: override Player.Move() to allow for a different jump check
-    new public void Move()
+    public override void Move()
     {
         // Horizontal movement
         float horizontalInput = Input.GetAxis("Horizontal");
         Vector3 direction = new Vector3(horizontalInput, 0, 0);
         Vector3 velocity = direction * moveSpeed;
 
-        // Jumping and falling
-        if (controller.velocity.y < 1f)
+        // Jump when pressing space/w/arrow up by setting vetical speed
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
-            // Jump when pressing space/w/arrow up by setting vetical speed
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                yVelocity = jumpSpeed;
-            }
+            yVelocity = jumpSpeed;
         }
-        else // Player is in the air
-        {
-            yVelocity -= gravity * Time.deltaTime;
-        }
-
-        // Sets a maximal falling speed
-        if (yVelocity >= terminalVelocity)
-        {
-            yVelocity = terminalVelocity;
-        }
+    
+        // Applying gravity
+        //yVelocity -= gravity * Time.deltaTime;
 
         // Apply changes to vertical speed
         velocity.y = yVelocity;

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerSmall : Player
 {
-    // Override of Player.Start() to shrink and reduce jump height
+    // Adds shrinking and reducing jump height to Player.Start()
     new public void Start()
     {
         controller = GetComponent<CharacterController>();

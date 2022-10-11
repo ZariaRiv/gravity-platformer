@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerLowGravity : Player
 {
-    // Override of Player.Start() to incorporate the lower gravity
+    // Adds setting lower gravity to Player.Start()
     new public void Start()
     {
         controller = GetComponent<CharacterController>();
