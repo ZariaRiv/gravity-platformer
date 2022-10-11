@@ -35,7 +35,7 @@ public class PlayerInverseGravity : Player
         Vector3 velocity = direction * moveSpeed;
 
         // Jumping and falling
-        if (controller.isGrounded == true)
+        if (controller.velocity.y == 0f)
         {
             // Jump when pressing space/w/arrow up by setting vetical speed
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
