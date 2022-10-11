@@ -317,3 +317,4 @@ MonoBehaviour:
   jumpSpeed: 10
   gravity: 25
   terminalVelocity: -10
+  camera: {fileID: 6398017851661128076}

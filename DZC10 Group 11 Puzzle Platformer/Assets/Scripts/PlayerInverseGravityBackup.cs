@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerInverseGravity : Player
 {
+    new public GameObject camera;
+
     // Override of Player.Start() to invert gravity
     new public void Start()
     {
@@ -22,45 +24,18 @@ public class PlayerInverseGravity : Player
             Debug.Log("LevelManager not found!");
         }
 
-        // Inverts the gravity and jumps
+        // Checks if the camera is set correctly
+        if (camera == null)
+        {
+            Debug.Log("Camera not found!");
+        }
+
+        // Flip the player and camera
+        transform.Rotate(0f, 180f, 0f);
+        camera.transform.Rotate(0f, 0f, 180f);
+
+        // Inverted gravity
         gravity = -gravity;
-        jumpSpeed = -jumpSpeed;
-        terminalVelocity = -terminalVelocity;
-    }
-
-    // TODO: override Player.Move() to allow for a different jump check
-    new public void Move()
-    {
-        // Horizontal movement
-        float horizontalInput = Input.GetAxis("Horizontal");
-        Vector3 direction = new Vector3(horizontalInput, 0, 0);
-        Vector3 velocity = direction * moveSpeed;
-
-        // Jumping and falling
-        if (controller.velocity.y < 1f)
-        {
-            // Jump when pressing space/w/arrow up by setting vetical speed
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                yVelocity = jumpSpeed;
-            }
-        }
-        else // Player is in the air
-        {
-            yVelocity -= gravity * Time.deltaTime;
-        }
-
-        // Sets a maximal falling speed
-        if (yVelocity >= terminalVelocity)
-        {
-            yVelocity = terminalVelocity;
-        }
-
-        // Apply changes to vertical speed
-        velocity.y = yVelocity;
-
-        // Apply horizontal and vertical movement changes made this frame
-        controller.Move(velocity * Time.deltaTime);
     }
 }
 */
