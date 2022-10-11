@@ -27,7 +27,6 @@ public class PlayerInverseGravity : Player
         terminalVelocity = -terminalVelocity;
     }
 
-    // TODO: override Player.Move() to allow for a different jump check
     public override void Move()
     {
         // Horizontal movement
@@ -35,19 +34,41 @@ public class PlayerInverseGravity : Player
         Vector3 direction = new Vector3(horizontalInput, 0, 0);
         Vector3 velocity = direction * moveSpeed;
 
-        // Jump when pressing space/w/arrow up by setting vetical speed
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        // Jumping and falling
+        if ((controller.collisionFlags & CollisionFlags.Above) != 0)
         {
-            yVelocity = jumpSpeed;
+            // Jump when pressing space/w/arrow up by setting vetical speed
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                yVelocity = jumpSpeed;
+            }
         }
-    
-        // Applying gravity
-        //yVelocity -= gravity * Time.deltaTime;
+        else // Player is in the air
+        {
+            // Applying gravity
+            yVelocity -= gravity * Time.deltaTime;
+        }
+
+        // Sets a maximal falling speed
+        if (yVelocity >= terminalVelocity)
+        {
+            yVelocity = terminalVelocity;
+        }
 
         // Apply changes to vertical speed
         velocity.y = yVelocity;
 
         // Apply horizontal and vertical movement changes made this frame
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    public override void SwitchDimensions()
+    {
+        // Enter mode to switch dimensions by pressing either Shift keys while grounded
+        if (((controller.collisionFlags & CollisionFlags.Above) != 0) && (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)))
+        {
+            stateManager.Identify(this.gameObject); // Lets the StateManager know they are the current player
+            stateManager.EnterSwitchState();        // Prompts the StateManager to expect a dimension switch
+        }
     }
 }

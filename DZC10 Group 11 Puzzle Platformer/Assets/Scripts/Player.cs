@@ -18,8 +18,6 @@ public class Player : MonoBehaviour
 
     [System.NonSerialized]
     public float yVelocity;
-    [System.NonSerialized]
-    public bool playerIsGrounded;
 
     // Start is called before the first frame update
     public virtual void Start()
@@ -55,7 +53,7 @@ public class Player : MonoBehaviour
         Vector3 velocity = direction * moveSpeed;
 
         // Jumping and falling
-        if (controller.isGrounded == true)
+        if (controller.isGrounded)
         {
             // Jump when pressing space/w/arrow up by setting vetical speed
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
@@ -89,7 +87,7 @@ public class Player : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
     }
     
-    private void SwitchDimensions()
+    public virtual void SwitchDimensions()
     {
         // Enter mode to switch dimensions by pressing either Shift keys while grounded
         if (controller.isGrounded && (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)))
