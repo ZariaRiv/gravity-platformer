@@ -24,6 +24,7 @@ public class PlayerInverseGravity : Player
         // Inverts the gravity and jumps
         gravity = -gravity;
         jumpSpeed = -jumpSpeed;
+        terminalVelocity = -terminalVelocity;
     }
 
     // TODO: override Player.Move() to allow for a different jump check
@@ -35,7 +36,7 @@ public class PlayerInverseGravity : Player
         Vector3 velocity = direction * moveSpeed;
 
         // Jumping and falling
-        if (controller.velocity.y == 0f)
+        if (controller.velocity.y < 1f)
         {
             // Jump when pressing space/w/arrow up by setting vetical speed
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
@@ -45,19 +46,11 @@ public class PlayerInverseGravity : Player
         }
         else // Player is in the air
         {
-            // This checks if the character is not moving but still has vertical velocity
-            // Without it, the player doesn't stop their jump when bumping their head
-            if (controller.velocity.y == 0.0f && yVelocity > 0.0f)
-            {
-                yVelocity = 0f;
-            }
-
-            // Applying gravity
             yVelocity -= gravity * Time.deltaTime;
         }
 
         // Sets a maximal falling speed
-        if (yVelocity <= terminalVelocity)
+        if (yVelocity >= terminalVelocity)
         {
             yVelocity = terminalVelocity;
         }
