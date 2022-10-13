@@ -26,6 +26,6 @@ public class PlayerLowGravity : Player
         gravity = 10f;
 
         anim = GetComponent<Animator>();
-        Debug.Log(anim);
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 }

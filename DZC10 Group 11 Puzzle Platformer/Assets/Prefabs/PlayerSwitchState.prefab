@@ -289,7 +289,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 2.3
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -308,15 +308,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa4e99acde973446825ae131feaacf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
   controller: {fileID: 0}
   stateManager: {fileID: 1116478257939933078, guid: 6290f6678a3f3634e92a664244b3ece7, type: 3}
   levelManager: {fileID: -3330119966360964020, guid: 3696c5379856e5843ad5fd70e8426bc8, type: 3}
-  spriteRenderer: {fileID: 0}
+  anim: {fileID: 0}
   moveSpeed: 5
   jumpSpeed: 10
   gravity: 25
   terminalVelocity: -10
-  anim: {fileID: 0}
   currentDimension: 0
   numberOfDimensions: 0
 --- !u!65 &5753451516745851789

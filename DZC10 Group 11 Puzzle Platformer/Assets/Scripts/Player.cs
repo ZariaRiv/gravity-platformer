@@ -5,11 +5,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public SpriteRenderer spriteRenderer;
     [HideInInspector]
     public CharacterController controller;
     public StateManager stateManager;
     public LevelManager levelManager;
-    public SpriteRenderer spriteRenderer;
+    public Animator anim;
+    public bool facingRight = true;
+    
 
     // Movement variables
     public float moveSpeed = 5.0f;
@@ -17,8 +20,8 @@ public class Player : MonoBehaviour
     public float gravity = 25.0f;
     public float terminalVelocity = -10.0f;
     
-    private bool facingRight = true;
-    public Animator anim;
+    
+    
 
     [System.NonSerialized]
     public float yVelocity;
@@ -41,6 +44,7 @@ public class Player : MonoBehaviour
         }
 
         anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -139,6 +143,8 @@ public class Player : MonoBehaviour
 	{
 		// Switch the value of the Boolean
 		facingRight = !facingRight;
+
+        spriteRenderer.flipX = facingRight;
  
 		// Get and store the local scale of the RigidBody2D
 		//Vector2 theScale = rb.transform.localScale;

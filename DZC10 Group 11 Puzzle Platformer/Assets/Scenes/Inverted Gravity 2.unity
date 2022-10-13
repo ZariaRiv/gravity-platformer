@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657683, g: 0.49641126, b: 0.57481736, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657755, g: 0.4964127, b: 0.57481825, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -918,6 +918,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7458396640706707065, guid: 369faa21c73931e4d8b09bc3d5c202c2, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 1141488172}
     - target: {fileID: 6398017851774441905, guid: 369faa21c73931e4d8b09bc3d5c202c2, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1019,6 +1023,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1141488172 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6553131995432922100, guid: 369faa21c73931e4d8b09bc3d5c202c2, type: 3}
+  m_PrefabInstance: {fileID: 1031825804}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1722368409
 PrefabInstance:
   m_ObjectHideFlags: 0

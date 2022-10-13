@@ -26,6 +26,8 @@ public class PlayerInverseGravity : Player
         jumpSpeed = -jumpSpeed;
         terminalVelocity = -terminalVelocity;
         anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.flipY = true;
     }
 
     public override void Move()
@@ -34,6 +36,16 @@ public class PlayerInverseGravity : Player
         float horizontalInput = Input.GetAxis("Horizontal");
         Vector3 direction = new Vector3(horizontalInput, 0, 0);
         Vector3 velocity = direction * moveSpeed;
+
+        if (anim){
+            anim.SetFloat("speed", Mathf.Abs(moveSpeed * horizontalInput));
+        }
+        
+
+        if (horizontalInput < 0 && !facingRight)
+			reverseImage ();
+		else if (horizontalInput > 0 && facingRight)
+			reverseImage ();
 
         // Jumping and falling
         if ((controller.collisionFlags & CollisionFlags.Above) != 0)
