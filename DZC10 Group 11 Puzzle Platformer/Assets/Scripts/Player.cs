@@ -9,12 +9,16 @@ public class Player : MonoBehaviour
     public CharacterController controller;
     public StateManager stateManager;
     public LevelManager levelManager;
+    public SpriteRenderer spriteRenderer;
 
     // Movement variables
     public float moveSpeed = 5.0f;
     public float jumpSpeed = 10.0f;
     public float gravity = 25.0f;
     public float terminalVelocity = -10.0f;
+    
+    private bool facingRight = true;
+    public Animator anim;
 
     [System.NonSerialized]
     public float yVelocity;
@@ -35,6 +39,8 @@ public class Player : MonoBehaviour
         {
             Debug.Log("LevelManager not found!");
         }
+
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -51,6 +57,16 @@ public class Player : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         Vector3 direction = new Vector3(horizontalInput, 0, 0);
         Vector3 velocity = direction * moveSpeed;
+        
+        if (anim){
+            anim.SetFloat("speed", Mathf.Abs(moveSpeed * horizontalInput));
+        }
+        
+
+        if (horizontalInput < 0 && !facingRight)
+			reverseImage ();
+		else if (horizontalInput > 0 && facingRight)
+			reverseImage ();
 
         // Jumping and falling
         if (controller.isGrounded)
@@ -118,4 +134,17 @@ public class Player : MonoBehaviour
             levelManager.nextLevel();
         }
     }
+
+    public void reverseImage()
+	{
+		// Switch the value of the Boolean
+		facingRight = !facingRight;
+ 
+		// Get and store the local scale of the RigidBody2D
+		//Vector2 theScale = rb.transform.localScale;
+ 
+		// Flip it around the other way
+		//theScale.x *= -1;
+		//rb.transform.localScale = theScale;
+	}
 }

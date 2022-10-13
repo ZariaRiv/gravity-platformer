@@ -25,6 +25,7 @@ public class PlayerInverseGravity : Player
         gravity = -gravity;
         jumpSpeed = -jumpSpeed;
         terminalVelocity = -terminalVelocity;
+        anim = GetComponent<Animator>();
     }
 
     public override void Move()

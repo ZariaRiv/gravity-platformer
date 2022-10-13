@@ -27,5 +27,7 @@ public class PlayerSmall : Player
 
         // Make jumps lower
         jumpSpeed = 7f;
+
+        anim = GetComponent<Animator>();
     }
 }

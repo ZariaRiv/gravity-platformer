@@ -24,5 +24,8 @@ public class PlayerLowGravity : Player
 
         // Lowers the gravity for this object
         gravity = 10f;
+
+        anim = GetComponent<Animator>();
+        Debug.Log(anim);
     }
 }
