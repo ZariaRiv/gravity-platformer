@@ -1,30 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class NewPlayer : MonoBehaviour
 {
     [HideInInspector] public SpriteRenderer spriteRenderer;
-    [HideInInspector] public CharacterController controller;
     [HideInInspector] public Animator anim;
+    [HideInInspector] public bool facingRight = true;
+    [HideInInspector] public bool isGrounded = false;
+    
     public StateManager stateManager;
     public LevelManager levelManager;
-    public bool facingRight = true;
-    
+
     // Movement variables
     public float moveSpeed = 5.0f;
     public float jumpSpeed = 10.0f;
-    public float gravity = 25.0f;
+    public float gravityScale = 1f;
     public float terminalVelocity = -10.0f;
     
-    [System.NonSerialized]
-    public float yVelocity;
+    [System.NonSerialized] public float yVelocity;
 
     // Start is called before the first frame update
     public virtual void Start()
     {
-        controller = GetComponent<CharacterController>();
+        anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
         // Checks if the current scene contains a StateManager 
         if (stateManager == null)
@@ -37,38 +40,45 @@ public class NewPlayer : MonoBehaviour
         {
             Debug.Log("LevelManager not found!");
         }
-
-        anim = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     public virtual void Update()
     {
+        IsGrounded();
         Move();
         SwitchDimensions();
         MenuInputs();
+    }
+
+    public virtual void IsGrounded()
+    {
+        
     }
 
     public virtual void Move()
     {
         // Horizontal movement
         float horizontalInput = Input.GetAxis("Horizontal");
-        Vector3 direction = new Vector3(horizontalInput, 0, 0);
-        Vector3 velocity = direction * moveSpeed;
+        Vector2 direction = new Vector2(horizontalInput, 0);
+        Vector2 velocity = direction * moveSpeed;
         
-        if (anim){
+        if (anim)
+        {
             anim.SetFloat("speed", Mathf.Abs(moveSpeed * horizontalInput));
         }
         
-
         if (horizontalInput < 0 && !facingRight)
+        {
 			reverseImage ();
-		else if (horizontalInput > 0 && facingRight)
+        } 
+        else if (horizontalInput > 0 && facingRight)
+        {
 			reverseImage ();
+        }
 
         // Jumping and falling
-        if (controller.isGrounded)
+        if (isGrounded)
         {
             // Jump when pressing space/w/arrow up by setting vetical speed
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
@@ -76,39 +86,22 @@ public class NewPlayer : MonoBehaviour
                 yVelocity = jumpSpeed;
             }
         }
-        else // Player is in the air
-        {
-            // This checks if the character is not moving but still has vertical velocity
-            // Without it, the player doesn't stop their jump when bumping their head
-            if (controller.velocity.y == 0.0f && yVelocity > 0.0f)
-            {
-                yVelocity = 0f;
-            }
-
-            // Applying gravity
-            yVelocity -= gravity * Time.deltaTime;
-        }
-
-        // Sets a maximal falling speed
-        if (yVelocity <= terminalVelocity)
-        {
-            yVelocity = terminalVelocity;
-        }
 
         // Apply changes to vertical speed
         velocity.y = yVelocity;
 
         // Apply horizontal and vertical movement changes made this frame
-        controller.Move(velocity * Time.deltaTime);
+        transform.Translate(velocity * Time.deltaTime);
     }
     
     public virtual void SwitchDimensions()
     {
         // Enter mode to switch dimensions by pressing either Shift keys while grounded
-        if (controller.isGrounded && (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)))
+        if (isGrounded && (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)))
         {
-            stateManager.Identify(this.gameObject); // Lets the StateManager know they are the current player
-            stateManager.EnterSwitchState();        // Prompts the StateManager to expect a dimension switch
+            print("Shift!");
+            //stateManager.Identify(this.gameObject); // Lets the StateManager know they are the current player
+            //stateManager.EnterSwitchState();        // Prompts the StateManager to expect a dimension switch
         }
     }
 
