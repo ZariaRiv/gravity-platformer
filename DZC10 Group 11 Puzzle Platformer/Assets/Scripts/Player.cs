@@ -5,24 +5,19 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public SpriteRenderer spriteRenderer;
-    [HideInInspector]
-    public CharacterController controller;
+    [HideInInspector] public SpriteRenderer spriteRenderer;
+    [HideInInspector] public CharacterController controller;
+    [HideInInspector] public Animator anim;
     public StateManager stateManager;
     public LevelManager levelManager;
-    public Animator anim;
     public bool facingRight = true;
     
-
     // Movement variables
     public float moveSpeed = 5.0f;
     public float jumpSpeed = 10.0f;
     public float gravity = 25.0f;
     public float terminalVelocity = -10.0f;
     
-    
-    
-
     [System.NonSerialized]
     public float yVelocity;
 

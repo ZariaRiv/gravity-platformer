@@ -29,6 +29,6 @@ public class PlayerSmall : Player
         jumpSpeed = 7f;
 
         anim = GetComponent<Animator>();
-        //spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 }
