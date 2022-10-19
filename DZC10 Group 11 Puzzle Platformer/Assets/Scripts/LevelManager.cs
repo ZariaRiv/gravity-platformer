@@ -14,6 +14,7 @@ public class LevelManager : MonoBehaviour
         {4, 3}, // Small 2 with 3 dimensions
         {5, 4}, // Inverse Gravity 1 with 4 dimensions
         {6, 4}, // Inverse Gravity 2 with 4 dimensions
+        {7, 4}, // Test scene with 4 dimensions
     }; 
 
     public int getSceneDimensions()
