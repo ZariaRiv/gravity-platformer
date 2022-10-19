@@ -5,13 +5,23 @@ using UnityEngine;
 
 public class PlayerSwitchState : Player
 {
-    [HideInInspector]
-    public int currentDimension, numberOfDimensions;
+    [HideInInspector] public int currentDimension, numberOfDimensions;
+
+    public GameObject defaultBackground;
+    public GameObject lowGravtiyBackground;
+    public GameObject smallBackground;
+    public GameObject invertedGravityBackground;
 
     // Override Start() to pause the time upon creation
     new public void Start()
     {
         controller = GetComponent<CharacterController>();
+
+        // Code for setting children componenents
+        defaultBackground = transform.GetChild(0).GetChild(0).GetChild(0).gameObject;
+        lowGravtiyBackground = transform.GetChild(0).GetChild(0).GetChild(1).gameObject;
+        smallBackground = transform.GetChild(0).GetChild(0).GetChild(2).gameObject;
+        invertedGravityBackground = transform.GetChild(0).GetChild(0).GetChild(3).gameObject;
 
         if (stateManager == null)
         {
@@ -26,9 +36,9 @@ public class PlayerSwitchState : Player
         currentDimension = getCurrentDimension();
         numberOfDimensions = levelManager.getSceneDimensions();
 
-        controller.transform.Translate(0, 1, -1);   // To increase focus
-        // TODO: Add tooltips for player actions in this state (up/down to switch, shift to accept)
+        setBackground();
 
+        controller.transform.Translate(0, 1, -1);   // To increase focus
         Time.timeScale = 0f; // Effectively pauses the game
     }
 
@@ -42,6 +52,7 @@ public class PlayerSwitchState : Player
             {
                 controller.transform.Translate(0, 40, 0);
                 currentDimension++;
+                setBackground();
             }
         }
 
@@ -52,6 +63,7 @@ public class PlayerSwitchState : Player
             {
                 controller.transform.Translate(0, -40, 0);
                 currentDimension--;
+                setBackground();
             }
         }
 
@@ -77,5 +89,37 @@ public class PlayerSwitchState : Player
         }
 
         return dimensionIndex;
+    }
+
+    void setBackground()
+    {
+        // Set all backgrounds false
+        defaultBackground.SetActive(false);
+        lowGravtiyBackground.SetActive(false);
+        smallBackground.SetActive(false);
+        invertedGravityBackground.SetActive(false);
+
+        switch (currentDimension)
+        {
+            case 0:
+                defaultBackground.SetActive(true);
+                break;
+
+            case 1:
+                lowGravtiyBackground.SetActive(true);
+                break;
+
+            case 2:
+                smallBackground.SetActive(true);
+                break;
+
+            case 3:
+                invertedGravityBackground.SetActive(true);
+                break;
+
+            default:
+                defaultBackground.SetActive(true);
+                break;
+        }
     }
 }
