@@ -28,6 +28,7 @@ public class PlayerInverseGravity : Player
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.flipY = true;
+        audio = GetComponent<AudioSource>();
     }
 
     public override void Move()
@@ -53,6 +54,7 @@ public class PlayerInverseGravity : Player
             // Jump when pressing space/w/arrow up by setting vetical speed
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
             {
+                audio.PlayOneShot(jump);
                 yVelocity = jumpSpeed;
             }
         }

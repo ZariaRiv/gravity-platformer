@@ -680,10 +680,11 @@ MonoBehaviour:
   anim: {fileID: 0}
   audio: {fileID: 0}
   facingRight: 1
+  isLanding: 1
   stateManager: {fileID: 1116478257939933078, guid: 6290f6678a3f3634e92a664244b3ece7, type: 3}
   levelManager: {fileID: -3330119966360964020, guid: 3696c5379856e5843ad5fd70e8426bc8, type: 3}
-  jump: {fileID: 8300000, guid: 2f2634915fb3bc14a8c96f7bc1cc90c7, type: 3}
-  land: {fileID: 8300000, guid: 172e58bf2b405a64888f646cbd6fc904, type: 3}
+  jump: {fileID: 8300000, guid: c3a6e7cfbca942d48b2c1896bd4d267d, type: 3}
+  land: {fileID: 8300000, guid: ff11ed3efd992954780a8e1f16297688, type: 3}
   moveSpeed: 5
   jumpSpeed: 10
   gravity: 25
@@ -791,7 +792,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

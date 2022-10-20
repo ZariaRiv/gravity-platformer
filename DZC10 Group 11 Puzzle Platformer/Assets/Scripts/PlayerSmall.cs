@@ -30,5 +30,6 @@ public class PlayerSmall : Player
 
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        audio = GetComponent<AudioSource>();
     }
 }

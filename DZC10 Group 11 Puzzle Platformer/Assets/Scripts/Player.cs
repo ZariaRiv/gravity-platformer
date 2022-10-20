@@ -66,7 +66,6 @@ public class Player : MonoBehaviour
         if (anim){
             anim.SetFloat("speed", Mathf.Abs(moveSpeed * horizontalInput));
         }
-        
 
         if (horizontalInput < 0 && !facingRight)
 			reverseImage ();
@@ -76,17 +75,16 @@ public class Player : MonoBehaviour
         // Jumping and falling
         if (controller.isGrounded)
         {
-            if(isLanding){
-                  audio.PlayOneShot(land);
-                  isLanding = false;  
-            }
-            // Jump when pressing space/w/arrow up by setting vetical speed
+            //if(isLanding){
+            //      audio.PlayOneShot(land);
+            //      isLanding = false;  
+            //}
+            // Jump when pressing space/w/arrow up by setting vertical speed
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
             {
-                yVelocity = jumpSpeed;
                 audio.PlayOneShot(jump);
-                isLanding = true;
-                //jump.Play();
+                yVelocity = jumpSpeed;
+                //isLanding = true;
             }
         }
         else // Player is in the air
@@ -136,6 +134,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //audio.PlayOneShot(land);
         if (other.tag == "Damaging") // Player collided with something dangerous, like enemies or spikes
         {
             levelManager.reloadLevel();
