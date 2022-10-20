@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3363509718ff4444e954854ef656d7cb
+guid: ed65265bdc9580e4296c810df0524a33
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -38,13 +38,13 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 64
@@ -128,7 +128,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SwampPack1_0
+      name: PurplePack1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -142,14 +142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ff41b2a65712ca4497cd986a235b0d4
-      internalID: -1720417102
+      spriteID: 93ee81d6242e3a54899df60274dfc563
+      internalID: 1295093824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_1
+      name: PurplePack1_1
       rect:
         serializedVersion: 2
         x: 64
@@ -163,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 419cfda4badc8fb4e86c635f4a833437
-      internalID: 2105237805
+      spriteID: 2e8df7252267d024caaf5663b1ad5d12
+      internalID: 142223583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_2
+      name: PurplePack1_2
       rect:
         serializedVersion: 2
         x: 128
@@ -184,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 790686359dbf88542a90ce2c5cecd448
-      internalID: 792759821
+      spriteID: 574ecb30a7298d5499dbc9deb56854b3
+      internalID: 872126405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_3
+      name: PurplePack1_3
       rect:
         serializedVersion: 2
         x: 192
@@ -205,14 +205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f6c03d98007a6840975552dde153c8d
-      internalID: -1676495493
+      spriteID: 03559744b6fcd54498ae0079a34ddfba
+      internalID: 1371190372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_4
+      name: PurplePack1_4
       rect:
         serializedVersion: 2
         x: 256
@@ -226,14 +226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 983346677cea8da4f8accb79712fe696
-      internalID: -1381280938
+      spriteID: 5b8b412b233b1634a8e34eeb533d1d7e
+      internalID: 277642108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_5
+      name: PurplePack1_5
       rect:
         serializedVersion: 2
         x: 320
@@ -247,14 +247,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 167a9ca2a1ab6fb4cb08c7257383e2ad
-      internalID: -95836036
+      spriteID: a161cffeacdb7284f97ad87c0ddd257b
+      internalID: 1061828779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_6
+      name: PurplePack1_6
       rect:
         serializedVersion: 2
         x: 384
@@ -268,14 +268,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8258bc0be012f74ca44210be8e93949
-      internalID: 1064062448
+      spriteID: f47bc53f333e6ed45a1c6fc5c4064d28
+      internalID: -1087711587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_7
+      name: PurplePack1_7
       rect:
         serializedVersion: 2
         x: 448
@@ -289,14 +289,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ee63d1ee92531746b0e3c9c47c97b59
-      internalID: -1360591563
+      spriteID: c5effa6a6c2b7ce42a6f414f9d6e6b7d
+      internalID: 612465433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_8
+      name: PurplePack1_8
       rect:
         serializedVersion: 2
         x: 512
@@ -310,14 +310,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3705d67109115874d8a59285387f48fe
-      internalID: -650254179
+      spriteID: 45507aacff8dc534687916126eccdc9c
+      internalID: 1766369859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_9
+      name: PurplePack1_9
       rect:
         serializedVersion: 2
         x: 576
@@ -331,14 +331,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0555db07d58118145937475e14c377fb
-      internalID: 812005773
+      spriteID: d536cb88edf2a7240a587be241bfe98c
+      internalID: -1926818741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_10
+      name: PurplePack1_10
       rect:
         serializedVersion: 2
         x: 0
@@ -352,14 +352,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc44ad5d0ce49174d9d363aa602a295c
-      internalID: 616394094
+      spriteID: 2b3957e61d58c5244b8702f113073e79
+      internalID: -594833506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_11
+      name: PurplePack1_11
       rect:
         serializedVersion: 2
         x: 64
@@ -373,14 +373,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfbc30a7643b5cd4390c03f62f3a3da2
-      internalID: 203618095
+      spriteID: bfcf30aac1d5ff34e81bd8f84ad13698
+      internalID: -434199791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_12
+      name: PurplePack1_12
       rect:
         serializedVersion: 2
         x: 128
@@ -394,14 +394,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02fbbb42daa69734b84edd79243c9d0c
-      internalID: 55546488
+      spriteID: e58b72330ddd50d4883eb8d22902eb8e
+      internalID: -1624610548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_13
+      name: PurplePack1_13
       rect:
         serializedVersion: 2
         x: 192
@@ -415,14 +415,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b02081073bb05e344b4ff1dcba17a903
-      internalID: 797626483
+      spriteID: ba8554f415f5e2641881896f47fd9308
+      internalID: 259333199
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_14
+      name: PurplePack1_14
       rect:
         serializedVersion: 2
         x: 256
@@ -436,14 +436,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 702e6785f2340e946bea35d4c565fc51
-      internalID: -2083581194
+      spriteID: 8cc6d2d9d056c8b479f247e7451a5270
+      internalID: 984001834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_15
+      name: PurplePack1_15
       rect:
         serializedVersion: 2
         x: 320
@@ -457,14 +457,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9fef5451580c3647a88421559d4f2dd
-      internalID: -1236588810
+      spriteID: b69cb0dd35f00944eba2b0d4f3f969df
+      internalID: 1719274677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_16
+      name: PurplePack1_16
       rect:
         serializedVersion: 2
         x: 384
@@ -478,14 +478,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bde10d4e366900549a7684008270200a
-      internalID: -639355511
+      spriteID: ae47d2cba7e54cc4dbe2ec7d94d7e04d
+      internalID: -52009592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_17
+      name: PurplePack1_17
       rect:
         serializedVersion: 2
         x: 448
@@ -499,14 +499,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f27aea893117bba409cb04fd38533fd5
-      internalID: -1505990749
+      spriteID: 9b0ae59de7d4e154db2d7825494bce98
+      internalID: -321922066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_18
+      name: PurplePack1_18
       rect:
         serializedVersion: 2
         x: 512
@@ -520,14 +520,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e236cc83cb8e8d4d853cf4088704081
-      internalID: 572249901
+      spriteID: 8ff2461f429ee794abc45894e1953795
+      internalID: -593596000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_19
+      name: PurplePack1_19
       rect:
         serializedVersion: 2
         x: 576
@@ -541,14 +541,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40a082d76d3321543a2c9b49ff7432b6
-      internalID: -1810652038
+      spriteID: 6cb558c1e7ec6da478173d1bebae724d
+      internalID: 509343733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_20
+      name: PurplePack1_20
       rect:
         serializedVersion: 2
         x: 0
@@ -562,14 +562,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 074bb03175c2c904c860af2456b6268b
-      internalID: 1053780910
+      spriteID: 66d71db6b2ec91040a9b8f439f9e0135
+      internalID: 794332820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_21
+      name: PurplePack1_21
       rect:
         serializedVersion: 2
         x: 64
@@ -583,14 +583,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: daf0c90f4a6ce4646bd898ea71b591c7
-      internalID: -1204785756
+      spriteID: 46b30f257388b974d9e14eb0db125b76
+      internalID: -1169565265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_22
+      name: PurplePack1_22
       rect:
         serializedVersion: 2
         x: 128
@@ -604,14 +604,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0eab313ac72602546a4f073bf2412aed
-      internalID: 332103533
+      spriteID: 9d2a4456fa050b249b201d760f74012d
+      internalID: -604648785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_23
+      name: PurplePack1_23
       rect:
         serializedVersion: 2
         x: 192
@@ -625,14 +625,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1edbf9fa345646043ac5b51b87e8953e
-      internalID: 2036616201
+      spriteID: ade2bef1f701c5d4fab26acdbed7c4b4
+      internalID: -1161994619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_24
+      name: PurplePack1_24
       rect:
         serializedVersion: 2
         x: 256
@@ -646,14 +646,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 312ab13288db713469c336410e155768
-      internalID: -1958194751
+      spriteID: 57c48f4881e28344e98027c7e0595b89
+      internalID: -143738815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_25
+      name: PurplePack1_25
       rect:
         serializedVersion: 2
         x: 320
@@ -667,14 +667,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34d1aff1ba10ff9418afaca7d4a4982a
-      internalID: -612859276
+      spriteID: dc651aeb28a03c74e8d98c85835b423d
+      internalID: -879682475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_26
+      name: PurplePack1_26
       rect:
         serializedVersion: 2
         x: 384
@@ -688,14 +688,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27dfcb17bf9751c4e8780774196b9e05
-      internalID: -460306234
+      spriteID: dcac6d7a227d0584a94d34ea6e6f1d1d
+      internalID: 1726568247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_27
+      name: PurplePack1_27
       rect:
         serializedVersion: 2
         x: 448
@@ -709,14 +709,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1875086aea27d52438a1a425a517aaae
-      internalID: -1857072850
+      spriteID: bfd8db1ec61097446a0d5b39ff60ab81
+      internalID: -1893746782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_28
+      name: PurplePack1_28
       rect:
         serializedVersion: 2
         x: 512
@@ -730,14 +730,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15b82901a228fbc4c89a0d6d8961ad71
-      internalID: -1611329405
+      spriteID: 1032c2f3ad06a0143878183a5046a081
+      internalID: 1953755725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_29
+      name: PurplePack1_29
       rect:
         serializedVersion: 2
         x: 576
@@ -751,14 +751,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5d357349be8df2498728b91888bedb2
-      internalID: -126192537
+      spriteID: 2816c3fd2e6c49a42a43e754ff3acc64
+      internalID: 1399506317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_30
+      name: PurplePack1_30
       rect:
         serializedVersion: 2
         x: 256
@@ -772,14 +772,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7839b4a91af036043874081000137444
-      internalID: 2095014397
+      spriteID: d35b7e2960f19714fb76e5d957eede54
+      internalID: -915923127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_31
+      name: PurplePack1_31
       rect:
         serializedVersion: 2
         x: 448
@@ -793,14 +793,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c7eb37d9ab631f40a81852600e56bc0
-      internalID: -1847142366
+      spriteID: 64aa512199f0b6c4c9b352ea5585766e
+      internalID: 1359658014
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_32
+      name: PurplePack1_32
       rect:
         serializedVersion: 2
         x: 512
@@ -814,14 +814,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca5c6322744a0234ab19b02e382af94e
-      internalID: -1644146238
+      spriteID: d594a67be78cc7c44a3047b1d8cd5669
+      internalID: -118984514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_33
+      name: PurplePack1_33
       rect:
         serializedVersion: 2
         x: 576
@@ -835,14 +835,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9d0749ff4c7f7142b764a6cb462c443
-      internalID: -485869510
+      spriteID: a6fded1b8ad51e745ad02553afbd8dce
+      internalID: -144236607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_34
+      name: PurplePack1_34
       rect:
         serializedVersion: 2
         x: 0
@@ -856,14 +856,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7efe02f13a55c6e4cb4df81d7e41988b
-      internalID: -1377371693
+      spriteID: f5c82907523710142bf221533dfb535f
+      internalID: 258138383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_35
+      name: PurplePack1_35
       rect:
         serializedVersion: 2
         x: 64
@@ -877,14 +877,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5c0d9e6a0152fe4fb32bd268fc26bf1
-      internalID: 31394478
+      spriteID: ac98238c06583ab4793b42f9b82c2ba0
+      internalID: 2116851522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_36
+      name: PurplePack1_36
       rect:
         serializedVersion: 2
         x: 128
@@ -898,14 +898,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04158fe38aa6310448b1113b2379d937
-      internalID: -1706260242
+      spriteID: a4a6a26f9f781974db13127fc27ebc50
+      internalID: 980129014
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_37
+      name: PurplePack1_37
       rect:
         serializedVersion: 2
         x: 256
@@ -919,14 +919,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 721bfb6dc9eb47c47be62aa16e7b9cee
-      internalID: -122614790
+      spriteID: 2f4a2f06e5a3d444e8dd444c13a876dd
+      internalID: -403904205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_38
+      name: PurplePack1_38
       rect:
         serializedVersion: 2
         x: 448
@@ -940,14 +940,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09d451ec52f352a4dac917050da49b0d
-      internalID: -944518148
+      spriteID: 3643e041a8532b544b12ddbba95ffcb1
+      internalID: 1052695011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_39
+      name: PurplePack1_39
       rect:
         serializedVersion: 2
         x: 576
@@ -961,14 +961,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47cceb911d64bce4a90d40e23c7e4089
-      internalID: -1201400852
+      spriteID: 5b93c371a85eb424ea2eeebe56cf0b52
+      internalID: -595329672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_40
+      name: PurplePack1_40
       rect:
         serializedVersion: 2
         x: 256
@@ -982,14 +982,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 946e1552baea2d84b8252a72b075b7d2
-      internalID: -792449630
+      spriteID: 7cbea7fd61ba083408914cbeae4899d4
+      internalID: 314104447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_41
+      name: PurplePack1_41
       rect:
         serializedVersion: 2
         x: 448
@@ -1003,14 +1003,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc74fe4754d49fe4eb198fdf74c07b36
-      internalID: 1706539723
+      spriteID: d5d71a9015abf5747bed558154f431f1
+      internalID: 848795190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_42
+      name: PurplePack1_42
       rect:
         serializedVersion: 2
         x: 512
@@ -1024,14 +1024,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 891bff98ade36fc4dbde0539141aa23f
-      internalID: -1544812710
+      spriteID: 7f080f7451e81e5408aa2234ef5ffb86
+      internalID: -2039372880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_43
+      name: PurplePack1_43
       rect:
         serializedVersion: 2
         x: 576
@@ -1045,14 +1045,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 357e87ef45db1c44d8bb2f1ee399962a
-      internalID: 1800273468
+      spriteID: acdf1f46b70f032469e6c08d81796437
+      internalID: 1618351055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_44
+      name: PurplePack1_44
       rect:
         serializedVersion: 2
         x: 64
@@ -1066,14 +1066,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d432dd534ae4be44aa108364c843479
-      internalID: 599669979
+      spriteID: c500096b09ab67c44a60a671fe4d71e1
+      internalID: -1731523737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_45
+      name: PurplePack1_45
       rect:
         serializedVersion: 2
         x: 384
@@ -1087,14 +1087,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac22bb6b2afa59e4394090453a0d68de
-      internalID: 1764544372
+      spriteID: b4fb6ca7c3569a340b876609f4a58191
+      internalID: 871469172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_46
+      name: PurplePack1_46
       rect:
         serializedVersion: 2
         x: 448
@@ -1108,14 +1108,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6363bb4a3ec6e14cab17c86d2a12da0
-      internalID: -838302313
+      spriteID: d7befdae456ac924785bd5ec1f557b33
+      internalID: -128883289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_47
+      name: PurplePack1_47
       rect:
         serializedVersion: 2
         x: 512
@@ -1129,14 +1129,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00d2938429d538547a994467bc9b4ba4
-      internalID: -460650206
+      spriteID: 8d7754a75038a9145bc09a994b11ddf6
+      internalID: 134912584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_48
+      name: PurplePack1_48
       rect:
         serializedVersion: 2
         x: 576
@@ -1150,14 +1150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb66060163ad6554fa428e3d68d1b7aa
-      internalID: 1422113236
+      spriteID: c737b1d2e9a4a6b42919c34200884cbd
+      internalID: -1597541928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_49
+      name: PurplePack1_49
       rect:
         serializedVersion: 2
         x: 256
@@ -1171,14 +1171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4605386ff60ecc8468f6996f5a145be7
-      internalID: 2073039808
+      spriteID: bac81fd50e4041a44b7c91e335800477
+      internalID: 1713453208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_50
+      name: PurplePack1_50
       rect:
         serializedVersion: 2
         x: 384
@@ -1192,14 +1192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59bca103760b295428898a371d145766
-      internalID: -1697190499
+      spriteID: 4ef6cd01eaa349a4085a25c94da5d390
+      internalID: 997726238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_51
+      name: PurplePack1_51
       rect:
         serializedVersion: 2
         x: 448
@@ -1213,14 +1213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c704dc9d8a7cd34493937b1deef1638
-      internalID: 501882387
+      spriteID: e629d2dc636f78e4e804eed2df5eb2fd
+      internalID: -1736084949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_52
+      name: PurplePack1_52
       rect:
         serializedVersion: 2
         x: 512
@@ -1234,14 +1234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7587e0e208e724c4b8d8dcc8fe64ae65
-      internalID: 1802028539
+      spriteID: 5808bcd86e583554dbc4daef62969c7b
+      internalID: -6714200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_53
+      name: PurplePack1_53
       rect:
         serializedVersion: 2
         x: 576
@@ -1255,14 +1255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30642bfb1baf33249a1e302e769bf64d
-      internalID: -1528163412
+      spriteID: 10856b998b48afc4a93f575e30da6e0e
+      internalID: 764423212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_54
+      name: PurplePack1_54
       rect:
         serializedVersion: 2
         x: 0
@@ -1276,14 +1276,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bc8870a89c3e514e875ea9bc6d8b3c9
-      internalID: -1249930740
+      spriteID: a3bd5319f7212cd48ab3c4a53165480c
+      internalID: 1158023838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_55
+      name: PurplePack1_55
       rect:
         serializedVersion: 2
         x: 64
@@ -1297,14 +1297,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a78b6b4e88162c408e740b754096548
-      internalID: -292141019
+      spriteID: 793c441abf41b1b40a6cef957b615258
+      internalID: 803577287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_56
+      name: PurplePack1_56
       rect:
         serializedVersion: 2
         x: 128
@@ -1318,14 +1318,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 742119e089e1c344ca44118d53956777
-      internalID: 1171687866
+      spriteID: d37c84e53c9af6a4496fe7c1d732de33
+      internalID: 1012871475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_57
+      name: PurplePack1_57
       rect:
         serializedVersion: 2
         x: 256
@@ -1339,14 +1339,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 561af0ab56b7e2b40aafbeabeb255549
-      internalID: 1139489786
+      spriteID: 94cb3e3083377734694ec4244e2dd869
+      internalID: 1402875095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_58
+      name: PurplePack1_58
       rect:
         serializedVersion: 2
         x: 384
@@ -1360,14 +1360,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d8231259a9fa5d488f70e18444d3767
-      internalID: 1357802445
+      spriteID: 37942da1997c5814fb31c793382b6caa
+      internalID: -76078794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_59
+      name: PurplePack1_59
       rect:
         serializedVersion: 2
         x: 448
@@ -1381,14 +1381,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 106032370a787dd4eaf3cee9cdf76983
-      internalID: 1724823143
+      spriteID: 185c3dacd061d1341a4f6b8834fb7d02
+      internalID: 965168110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_60
+      name: PurplePack1_60
       rect:
         serializedVersion: 2
         x: 512
@@ -1402,14 +1402,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d3523df1a0511746bbd12c0997349b8
-      internalID: 329983575
+      spriteID: 0255167a7a1dca84e8d4a59904eb4c71
+      internalID: 48341393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_61
+      name: PurplePack1_61
       rect:
         serializedVersion: 2
         x: 576
@@ -1423,14 +1423,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9785e465d670104b9c7385737a8ffa0
-      internalID: 2060301775
+      spriteID: c49c5e25de62d5241a2b4afdc9b1049e
+      internalID: -1631697872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_62
+      name: PurplePack1_62
       rect:
         serializedVersion: 2
         x: 256
@@ -1444,14 +1444,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b577d22292236d04191a8b416d4b2090
-      internalID: 887142453
+      spriteID: bb3a7c054ab38364c8ed3da41de4b9cc
+      internalID: 903248678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_63
+      name: PurplePack1_63
       rect:
         serializedVersion: 2
         x: 384
@@ -1465,14 +1465,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e4aea958a56f924cb141a123c091a73
-      internalID: -1590038644
+      spriteID: a0470e38a0807f94aa95d675469e0592
+      internalID: 732686142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_64
+      name: PurplePack1_64
       rect:
         serializedVersion: 2
         x: 448
@@ -1486,14 +1486,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ab9a7da5c250cf4aa5fa4ce06a582fc
-      internalID: 2001546130
+      spriteID: 2f6279751a963b94cb627be46db97cbf
+      internalID: 632030945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_65
+      name: PurplePack1_65
       rect:
         serializedVersion: 2
         x: 512
@@ -1507,14 +1507,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c50ddbb5880fcca49bd7b2452efb1c9c
-      internalID: 1072473835
+      spriteID: fefd923855d71d4419ebe433e004862e
+      internalID: -1823170131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SwampPack1_66
+      name: PurplePack1_66
       rect:
         serializedVersion: 2
         x: 576
@@ -1528,8 +1528,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 777bcaa4e36583b4098c95fbf01c7d92
-      internalID: -1600904926
+      spriteID: 383efa9962e8b2f49b5ebb5c09d99279
+      internalID: -170826444
       vertices: []
       indices: 
       edges: []
@@ -1537,7 +1537,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 51c6633c2002c14419c9b9d25edfe036
     internalID: 0
     vertices: []
     indices: 
@@ -1545,73 +1545,73 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SwampPack1_13: 797626483
-      SwampPack1_32: -1644146238
-      SwampPack1_43: 1800273468
-      SwampPack1_4: -1381280938
-      SwampPack1_18: 572249901
-      SwampPack1_64: 2001546130
-      SwampPack1_6: 1064062448
-      SwampPack1_63: -1590038644
-      SwampPack1_54: -1249930740
-      SwampPack1_14: -2083581194
-      SwampPack1_47: -460650206
-      SwampPack1_9: 812005773
-      SwampPack1_2: 792759821
-      SwampPack1_20: 1053780910
-      SwampPack1_38: -944518148
-      SwampPack1_66: -1600904926
-      SwampPack1_36: -1706260242
-      SwampPack1_41: 1706539723
-      SwampPack1_8: -650254179
-      SwampPack1_24: -1958194751
-      SwampPack1_17: -1505990749
-      SwampPack1_16: -639355511
-      SwampPack1_33: -485869510
-      SwampPack1_12: 55546488
-      SwampPack1_50: -1697190499
-      SwampPack1_56: 1171687866
-      SwampPack1_57: 1139489786
-      SwampPack1_29: -126192537
-      SwampPack1_1: 2105237805
-      SwampPack1_55: -292141019
-      SwampPack1_11: 203618095
-      SwampPack1_22: 332103533
-      SwampPack1_44: 599669979
-      SwampPack1_10: 616394094
-      SwampPack1_45: 1764544372
-      SwampPack1_49: 2073039808
-      SwampPack1_26: -460306234
-      SwampPack1_23: 2036616201
-      SwampPack1_15: -1236588810
-      SwampPack1_21: -1204785756
-      SwampPack1_27: -1857072850
-      SwampPack1_61: 2060301775
-      SwampPack1_19: -1810652038
-      SwampPack1_58: 1357802445
-      SwampPack1_28: -1611329405
-      SwampPack1_25: -612859276
-      SwampPack1_40: -792449630
-      SwampPack1_5: -95836036
-      SwampPack1_3: -1676495493
-      SwampPack1_51: 501882387
-      SwampPack1_7: -1360591563
-      SwampPack1_31: -1847142366
-      SwampPack1_0: -1720417102
-      SwampPack1_42: -1544812710
-      SwampPack1_34: -1377371693
-      SwampPack1_30: 2095014397
-      SwampPack1_35: 31394478
-      SwampPack1_46: -838302313
-      SwampPack1_37: -122614790
-      SwampPack1_48: 1422113236
-      SwampPack1_52: 1802028539
-      SwampPack1_53: -1528163412
-      SwampPack1_59: 1724823143
-      SwampPack1_65: 1072473835
-      SwampPack1_39: -1201400852
-      SwampPack1_60: 329983575
-      SwampPack1_62: 887142453
+      PurplePack1_22: -604648785
+      PurplePack1_35: 2116851522
+      PurplePack1_56: 1012871475
+      PurplePack1_40: 314104447
+      PurplePack1_11: -434199791
+      PurplePack1_42: -2039372880
+      PurplePack1_53: 764423212
+      PurplePack1_12: -1624610548
+      PurplePack1_16: -52009592
+      PurplePack1_55: 803577287
+      PurplePack1_15: 1719274677
+      PurplePack1_58: -76078794
+      PurplePack1_8: 1766369859
+      PurplePack1_5: 1061828779
+      PurplePack1_54: 1158023838
+      PurplePack1_13: 259333199
+      PurplePack1_31: 1359658014
+      PurplePack1_60: 48341393
+      PurplePack1_64: 632030945
+      PurplePack1_43: 1618351055
+      PurplePack1_39: -595329672
+      PurplePack1_6: -1087711587
+      PurplePack1_1: 142223583
+      PurplePack1_23: -1161994619
+      PurplePack1_14: 984001834
+      PurplePack1_51: -1736084949
+      PurplePack1_33: -144236607
+      PurplePack1_30: -915923127
+      PurplePack1_28: 1953755725
+      PurplePack1_37: -403904205
+      PurplePack1_2: 872126405
+      PurplePack1_27: -1893746782
+      PurplePack1_36: 980129014
+      PurplePack1_10: -594833506
+      PurplePack1_21: -1169565265
+      PurplePack1_49: 1713453208
+      PurplePack1_0: 1295093824
+      PurplePack1_41: 848795190
+      PurplePack1_62: 903248678
+      PurplePack1_66: -170826444
+      PurplePack1_18: -593596000
+      PurplePack1_25: -879682475
+      PurplePack1_32: -118984514
+      PurplePack1_9: -1926818741
+      PurplePack1_29: 1399506317
+      PurplePack1_52: -6714200
+      PurplePack1_65: -1823170131
+      PurplePack1_47: 134912584
+      PurplePack1_20: 794332820
+      PurplePack1_46: -128883289
+      PurplePack1_26: 1726568247
+      PurplePack1_48: -1597541928
+      PurplePack1_17: -321922066
+      PurplePack1_57: 1402875095
+      PurplePack1_63: 732686142
+      PurplePack1_45: 871469172
+      PurplePack1_61: -1631697872
+      PurplePack1_38: 1052695011
+      PurplePack1_7: 612465433
+      PurplePack1_4: 277642108
+      PurplePack1_34: 258138383
+      PurplePack1_24: -143738815
+      PurplePack1_3: 1371190372
+      PurplePack1_19: 509343733
+      PurplePack1_44: -1731523737
+      PurplePack1_50: 997726238
+      PurplePack1_59: 965168110
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
