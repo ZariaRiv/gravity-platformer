@@ -8,9 +8,14 @@ public class Player : MonoBehaviour
     [HideInInspector] public SpriteRenderer spriteRenderer;
     [HideInInspector] public CharacterController controller;
     [HideInInspector] public Animator anim;
+    [HideInInspector] public AudioSource audio;
+    [HideInInspector] public bool facingRight = true;
+    [HideInInspector] public bool isLanding = true;
     public StateManager stateManager;
     public LevelManager levelManager;
-    public bool facingRight = true;
+    public AudioClip jump;
+    public AudioClip land;
+    
     
     // Movement variables
     public float moveSpeed = 5.0f;
@@ -40,6 +45,7 @@ public class Player : MonoBehaviour
 
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -70,10 +76,17 @@ public class Player : MonoBehaviour
         // Jumping and falling
         if (controller.isGrounded)
         {
+            if(isLanding){
+                  audio.PlayOneShot(land);
+                  isLanding = false;  
+            }
             // Jump when pressing space/w/arrow up by setting vetical speed
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
             {
                 yVelocity = jumpSpeed;
+                audio.PlayOneShot(jump);
+                isLanding = true;
+                //jump.Play();
             }
         }
         else // Player is in the air
@@ -140,12 +153,5 @@ public class Player : MonoBehaviour
 		facingRight = !facingRight;
 
         spriteRenderer.flipX = facingRight;
- 
-		// Get and store the local scale of the RigidBody2D
-		//Vector2 theScale = rb.transform.localScale;
- 
-		// Flip it around the other way
-		//theScale.x *= -1;
-		//rb.transform.localScale = theScale;
 	}
 }
