@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     [HideInInspector] public SpriteRenderer spriteRenderer;
     [HideInInspector] public CharacterController controller;
     [HideInInspector] public Animator anim;
-    [HideInInspector] public AudioSource audio;
+    [HideInInspector] new public AudioSource audio;
     [HideInInspector] public bool facingRight = true;
     [HideInInspector] public bool isLanding = true;
     public StateManager stateManager;
@@ -63,7 +63,8 @@ public class Player : MonoBehaviour
         Vector3 direction = new Vector3(horizontalInput, 0, 0);
         Vector3 velocity = direction * moveSpeed;
         
-        if (anim){
+        if (anim)
+        {
             anim.SetFloat("speed", Mathf.Abs(moveSpeed * horizontalInput));
         }
 
@@ -79,6 +80,7 @@ public class Player : MonoBehaviour
             //      audio.PlayOneShot(land);
             //      isLanding = false;  
             //}
+
             // Jump when pressing space/w/arrow up by setting vertical speed
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
             {
