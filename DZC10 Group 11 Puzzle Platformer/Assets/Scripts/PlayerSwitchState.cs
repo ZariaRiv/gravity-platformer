@@ -7,10 +7,10 @@ public class PlayerSwitchState : Player
 {
     [HideInInspector] public int currentDimension, numberOfDimensions;
 
-    public GameObject defaultBackground;
-    public GameObject lowGravtiyBackground;
-    public GameObject smallBackground;
-    public GameObject invertedGravityBackground;
+    private GameObject defaultBackground;
+    private GameObject lowGravtiyBackground;
+    private GameObject smallBackground;
+    private GameObject invertedGravityBackground;
 
     // Override Start() to pause the time upon creation
     new public void Start()
@@ -38,7 +38,6 @@ public class PlayerSwitchState : Player
 
         setBackground();
 
-        controller.transform.Translate(0, 1, -1);   // To increase focus
         Time.timeScale = 0f; // Effectively pauses the game
     }
 
@@ -70,7 +69,6 @@ public class PlayerSwitchState : Player
         // Accept current dimension
         if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
         {
-            controller.transform.Translate(0, -1, 1);
             Time.timeScale = 1f;                        // Unpause the game
             stateManager.Identify(this.gameObject);     // Lets the StateManager know they are the current player
             stateManager.UpdatePlayer();                // Prompts the StateManager to handle the dimension switch
