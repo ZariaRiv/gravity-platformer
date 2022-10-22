@@ -19,12 +19,6 @@ public class TextTriggers : MonoBehaviour
         {
             canvas.SetActive(true);
         }
-
-        if (other.tag == "SwitchingPlayer")
-        {
-            canvas.SetActive(false);
-        }
-
     }
 
     private void OnTriggerExit(Collider other)
