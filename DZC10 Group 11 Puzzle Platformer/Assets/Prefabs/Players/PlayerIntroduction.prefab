@@ -616,7 +616,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6398017851774441905}
   - component: {fileID: 6398017851774441907}
-  - component: {fileID: -7458396640706707065}
+  - component: {fileID: 7530267308135433044}
   - component: {fileID: 509198403361890416}
   - component: {fileID: 6553131995432922100}
   - component: {fileID: 9196132174784296960}
@@ -663,7 +663,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-7458396640706707065
+--- !u!114 &7530267308135433044
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -672,10 +672,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6398017851774441909}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e34c4c23a1d35642b46a714198940a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b428bf7d7db3054babf648c1f6a6a67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 6553131995432922100}
+  spriteRenderer: {fileID: 0}
   controller: {fileID: 0}
   anim: {fileID: 0}
   audio: {fileID: 0}
