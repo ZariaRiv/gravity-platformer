@@ -569,7 +569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384078661746171325, guid: af06073e6e67f9c49ab076e6e57bb7c5, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5384078661746171325, guid: af06073e6e67f9c49ab076e6e57bb7c5, type: 3}
       propertyPath: m_LocalScale.x
@@ -1091,6 +1091,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1408820552}
+  - component: {fileID: 1408820553}
   m_Layer: 0
   m_Name: Cutscene Controller
   m_TagString: Untagged
@@ -1111,12 +1112,26 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2068812531}
-  - {fileID: 507780711}
-  - {fileID: 2047246682}
   - {fileID: 1622251712}
+  - {fileID: 2047246682}
+  - {fileID: 507780711}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1408820553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408820551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e745c912d5999e4faac35983efd0936, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portal: {fileID: 8103403983163648902, guid: e52aa671b8e503f4e8f79f298baebf6c, type: 3}
+  player: {fileID: 6398017851774441909, guid: f69685a18cfaf4447a55d32a81524524, type: 3}
 --- !u!1 &1622251710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,7 +1214,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1408820552}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1651701312
 PrefabInstance:
