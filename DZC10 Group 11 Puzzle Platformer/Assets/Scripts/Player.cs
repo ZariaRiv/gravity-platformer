@@ -126,7 +126,7 @@ public class Player : MonoBehaviour
     }
 
     // Handles inputs such as reloading the level or exiting the game maybe?
-    private void MenuInputs()
+    public void MenuInputs()
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
