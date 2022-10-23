@@ -148,6 +148,15 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        //audio.PlayOneShot(land);
+        if (other.tag == "Damaging") // Player collided with something dangerous, like enemies or spikes
+        {
+            levelManager.reloadLevel();
+        }
+    }
+
     public void reverseImage()
 	{
 		// Switch the value of the Boolean
