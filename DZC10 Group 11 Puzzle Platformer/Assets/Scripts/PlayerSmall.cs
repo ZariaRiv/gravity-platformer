@@ -23,7 +23,7 @@ public class PlayerSmall : Player
         }
 
         // Shrink to a smaller size
-        transform.localScale = new Vector3(0.4f, 0.35f, 0.4f);
+        transform.localScale = new Vector3(0.35f, 0.35f, 0.35f);
 
         // Make jumps lower
         jumpSpeed = 7.5f;
