@@ -9,7 +9,7 @@ public class CutsceneController : MonoBehaviour
     private int trigger = 2;
 
     private GameObject canvas, professor, machine, playerInConversation;
-    public GameObject portal, player;
+    public GameObject portal, player, explosion;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +40,7 @@ public class CutsceneController : MonoBehaviour
 
                 if (conversationIndex == trigger)
                 {
+                    Instantiate(explosion);
                     Destroy(professor);
                     Destroy(machine);
                     Instantiate(portal, machine.transform.position, Quaternion.identity);

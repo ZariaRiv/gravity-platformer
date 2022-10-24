@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.5, y: 0}
+  m_AnchoredPosition: {x: 2.5, y: -0.24}
   m_SizeDelta: {x: 6, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &79868386
@@ -181,10 +181,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Welcome to the lab sample text
+  m_text: '"Welcome back to the lab! I''m glad you could join me."
 
 
-    [Space to continue]'
+    [Space to
+    continue]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 51051cb002eadd3479a597a59bd783fa, type: 2}
   m_sharedMaterial: {fileID: 7460830636536885430, guid: 51051cb002eadd3479a597a59bd783fa, type: 2}
@@ -247,7 +248,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -0.76908684, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -361,7 +362,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.5, y: 0}
+  m_AnchoredPosition: {x: -2.5, y: -0.24}
   m_SizeDelta: {x: 6, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &326485620
@@ -384,7 +385,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Sorry I''m late sample text
+  m_text: '"Sorry I''m late professor! I see you fixed the Multiverse Machine while
+    I was gone..."
 
 
     [Space to continue]'
@@ -450,7 +452,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -3.3225536, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -950,7 +952,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.5, y: 0}
+  m_AnchoredPosition: {x: -4.5, y: -0.24}
   m_SizeDelta: {x: 6, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1148201528
@@ -973,7 +975,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'I must go find the professor sample text
+  m_text: '"The professor got sucked into the multiverse! I''ll take this portable
+    dimension shifter prototype to go save him!"
 
 
     [Space to continue]'
@@ -1039,7 +1042,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -4.2613583, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1330,6 +1333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portal: {fileID: 8103403983163648902, guid: e52aa671b8e503f4e8f79f298baebf6c, type: 3}
   player: {fileID: 6398017851774441909, guid: f69685a18cfaf4447a55d32a81524524, type: 3}
+  explosion: {fileID: 427547198458371460, guid: 3dcb3a1504171364faba90c505e006f2, type: 3}
 --- !u!1 &1554148105
 GameObject:
   m_ObjectHideFlags: 0
@@ -2588,7 +2592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.5, y: 0}
+  m_AnchoredPosition: {x: 2.5, y: -0.27}
   m_SizeDelta: {x: 6, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1898839047
@@ -2611,7 +2615,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Activating machine now sample text
+  m_text: '"No worries! I''m glad you''re here for the first test! I''m activating
+    machine now!"
 
 
     [Space to continue]'
@@ -2677,7 +2682,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -2.0056005, y: 0, z: -0.5388193, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
