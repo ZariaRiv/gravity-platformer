@@ -132,6 +132,11 @@ public class Player : MonoBehaviour
         {
             levelManager.reloadLevel();
         }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
