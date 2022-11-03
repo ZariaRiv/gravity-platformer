@@ -44,9 +44,9 @@ public class PlayerInverseGravity : Player
         
 
         if (horizontalInput < 0 && !facingRight)
-			reverseImage ();
+			ReverseImage ();
 		else if (horizontalInput > 0 && facingRight)
-			reverseImage ();
+			ReverseImage ();
 
         // Jumping and falling
         if ((controller.collisionFlags & CollisionFlags.Above) != 0)

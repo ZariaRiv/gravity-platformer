@@ -69,9 +69,9 @@ public class Player : MonoBehaviour
         }
 
         if (horizontalInput < 0 && !facingRight)
-			reverseImage ();
+			ReverseImage ();
 		else if (horizontalInput > 0 && facingRight)
-			reverseImage ();
+			ReverseImage ();
 
         // Jumping and falling
         if (controller.isGrounded)
@@ -162,7 +162,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void reverseImage()
+    public void ReverseImage()
 	{
 		// Switch the value of the Boolean
 		facingRight = !facingRight;
